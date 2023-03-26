@@ -1,5 +1,69 @@
-
 # 0x011 .C Printf
+
+# Printf Project
+
+This project is an implementation of the printf function in the C programming language. The printf function is used to print formatted output to the console or terminal. This implementation follows the basic behavior and functionality of the standard printf function.
+
+## Overview
+
+The printf function takes a format string and a variable number of arguments. The format string is a string of characters that specify how to format the output. The arguments are a list of values that are substituted into the format string.
+
+This implementation of the printf function supports the following format specifiers:
+
+| Format specifier | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| `%c`             | Character                                                        |
+| `%s`             | String                                                           |
+| `%d`             | Signed integer                                                   |
+| `%i`             | Signed integer                                                   |
+| `%u`             | Unsigned integer                                                 |
+| `%x`             | Unsigned integer (hexadecimal)                                   |
+| `%X`             | Unsigned integer (uppercase hexadecimal)                         |
+| `%p`             | Pointer                                                          |
+| `%%`             | Print a percent sign                                             |
+
+## Usage
+
+To use the printf function, include the "printf.h" header file in your program. You can then call the printf function with a format string and the variables to be substituted into the format string.
+
+Here is an example:
+
+
+#include "printf.h"
+#include <stdio.h>
+
+int main() {
+    char c = 'H';
+    char* s = "ello";
+    int i = 42;
+
+    printf("%c%s %d\n", c, s, i);
+
+    return 0;
+}
+
+
+In this example, the format string `"%c%s %d\n"` specifies that the character `c`, the string `s`, and the integer `i` should be printed in order.
+
+## Testing
+
+To test the printf implementation, a test suite has been included in the "test" directory. The test suite uses the Unity testing framework to run a series of tests on the printf function.
+
+To run the test suite, first compile the "test_printf.c" file:
+
+
+gcc -o test_printf test/test_printf.c src/printf.c
+
+
+Then, run the compiled test executable:
+
+
+./test_printf
+
+
+The test output will be displayed in the console or terminal.
+
+
 The aim of the project is to understand the concept of team work and therefore, demisifying the concept of printf
 
 ---
@@ -79,4 +143,4 @@ These are all the tasks of this project, the ones that are completed link to the
 
 ---
 # Author: 
-[Dr Marcus](https://github.com/Dr-MarcusI) and [ABDULLAHI](https://github.com/aduadba)
+[Elijah Bayere](https://github.com/olittobee) and [Omoghene Omoghene](https://github.com/GodsonO)
